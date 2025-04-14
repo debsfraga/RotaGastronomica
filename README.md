@@ -30,13 +30,3 @@ O **Rota Gastronômica** é uma plataforma criada com HTML e CSS, com o objetivo
 - Seção de vídeo com conteúdo gastronômico
 - Rodapé com informações de contato e redes sociais
 
-## 💼 Serviços Oferecidos
-
-| Serviço                             | Descrição                                                                 | Valor         |
-|-------------------------------------|---------------------------------------------------------------------------|---------------|
-| Cadastro de Estabelecimentos        | Página personalizada com divulgação local                                 | R$ 25,00      |
-| Divulgação Promocional              | Pacote com 4 postagens em redes sociais e no site                         | R$ 80,00      |
-| Planos de Visibilidade              | Destaque em banners e listas do site                                      | R$ 120,00     |
-| Avaliações e Comentários            | Coleta de feedbacks e exibição pública                                    | R$ 50,00      |
-| Sessões Fotográficas Profissionais  | Ensaio do cardápio e do ambiente                                          | R$ 25,00      |
-| Parcerias com Influenciadores       | Intermediação com criadores de conteúdo locais                            | R$ 70,00      |
