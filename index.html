@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Rota Gastronômica</title>
+    <script>
+        alert('Bem vindo ao nosso site!');
+
+        dia = new Array("Domingo", "Seguda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado")
+        mes = new Array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro")
+        data = new Date
+    </script>
+</head>
+<body>
+    <header>
+        <div class="divHeader">
+            <img src="img/rota2.png" title="Rota Gastronômica" class="logo">
+        <!--Menu-->
+            <nav>
+                <ul>
+                    <!--Itens do menu-->
+                    <li>Home</li>
+                    <li>Produtos</li>
+                    <li>Contato</li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Banner-->
+    <img src="img/restaurante_home.png" alt="Imagem do Home" class="banner">
+    <!--Conteúdo da página web-->
+    <main class="fundo">
+        <!--SOBRE NÓS-->
+        <section class="sobre_nos">
+            <h2 class="titulo_sobrenos">Sobre nós </h2>
+            <img src="img/tatu_bola.jpg" alt="Bar aleatório (temporário)" class="img_sobrenos">
+            <p>
+                <script>
+                    document.write(dia[data.getDay()] + " , " + data.getDate() + " de " + mes[data.getMonth()] + " de " + data.getFullYear());
+                </script>
+            </p>
+            <br>
+            <p><br>Bem-vindo ao Rota Gastronômica, seu guia definitivo para explorar os melhores restaurantes e barzinhos da cidade! Nosso objetivo é conectar você a experiências gastronômicas incríveis, apresentando desde os estabelecimentos mais tradicionais até os cantinhos escondidos que valem a pena conhecer.
+                <br><br>
+            <p>Aqui, você encontra recomendações cuidadosas, dicas exclusivas e informações detalhadas para tornar cada saída <br>uma experiência única. Seja para um jantar especial, um happy hour descontraído ou para descobrir novos <br>sabores, estamos aqui para ajudar você a encontrar o lugar perfeito!</p>
+                <br>
+            <p><i><b>Explore, descubra e saboreie com o Rota Gastronômica!</b></i></p>
+        </section>
+        <!--NOSSO ESTABELECIMENTO-->
+        <section class="mapaGeral">
+            <h2 class="titulo_sobrenos">Nosso Estabalecimento </h2>
+            <p class="mapaGeral p">Veja no mapa abaixo como nos encontrar!</p>
+            <div>
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.8653098296363!2d-46.561209823950804!3d-23.64499416467147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4328c992748f%3A0xcea3c3e698444297!2sSENAI%20S%C3%A3o%20Caetano%20do%20Sul!5e0!3m2!1spt-BR!2sbr!4v1740608280602!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section class="nossos_produtos">
+            <h2 class="titulo_nossosP">Nossos Produtos</h2>
+            <div class="nossos_produtos_content">
+                <ul class="lista">
+                    <li>Experiências Gatronômicas</li>
+                    <li>Pratos em Destaque</li>
+                    <li>Parceiros e Ofertas Especiais</li>
+                    <li>Rota de Sabores</li>
+                </ul>
+                <div class="img_nossosP">
+                    <img  src="img/restaurante_belem.png" alt="Restaurante Xícara da Silva Belém do Pará">
+                </div>
+            </div>
+            <!--Vídeo-->
+            <div class="video">
+                <h2 class="titulo_nossosP">Vídeo</h2>
+                <p>A seguir um vídeo com as comidas dos butecos de SP!</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PWgi4YS00Jk?si=UUC5rYjLg8dZ7HQR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+    <!--Rodapé do site-->
+    <footer>
+        <img class="logo_rodape" src="img/rota2.png" alt="Rota Gastronômica">
+        <p>Compartilhe seu restaurante ou bar conosco: <a href="mailto:rota_gastronomica@gamil.com"><i class="fa fa-envelope "></i></a> rota_gastronomica@gmail.com </p>
+        <p>Siga a gente no instagram! <a href="https://instagram.com/rotagastronomica"><i class="fa fa-instagram"></i></a> @rota_gastronomica</p>
+    </footer>
+</body>
+</html>
