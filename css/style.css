@@ -43,6 +43,11 @@ nav li {
     margin-right: 50px;
 }
 
+nav li a{
+    color: white;
+    text-decoration: none;
+}
+
 .banner{
     width: 100%;
     object-fit: cover; /* Server para não ficar achatado*/
