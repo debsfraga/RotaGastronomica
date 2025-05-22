@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Estilização do BODY do site*/
+body {
+    margin: 0;
+    border: 0;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background-color: black;
+}
+
+.logo {
+    width: 15%;
+    margin: 2px 2px -50px 10px;
+}
+
+/*Estilização do header do site*/
+header {
+    background-color: black;
+}
+
+/*Estlização da DIV do header*/
+.divHeader {
+    position: relative;
+    margin: auto;
+    width: 90%;
+    padding-bottom: 10px;
+}
+
+/*Estilização do MENU do site*/
+nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    color: aliceblue;
+    font-size: 25px;
+    margin-right: 50px;
+}
+
+nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+.banner{
+    width: 100%;
+    object-fit: cover; /* Server para não ficar achatado*/
+    margin-bottom: 2%;
+}
+/*Estilização do MAIN*/
+.fundo{
+    background: linear-gradient(#000, #292828);
+}
+
+/*Título*/
+.produtos-titulo{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    list-style: none;
+}
+
+/*Texto dos Contatos*/
+.texto-contatos{
+    padding-left: 5%;
+    color: white;
+}
+
+.titulo_h3 {
+    padding-left: 3%;
+    color: white;
+}
