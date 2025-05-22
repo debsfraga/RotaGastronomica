@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Rota Gastronômica</title>
+    <link href="css/style_contatos.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="divHeader">
+                <img src="img/rota2.png" title="Rota Gastrônomica" class="logo"/>
+            <!--Menu-->
+                <nav>
+                    <ul>
+                        <!--Itens do menu-->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li>Contato</li>
+                    </ul>
+                </nav> 
+            </div>
+        </header>
+        <main>
+            <!--Título-->
+            <ul class="produtos-titulo">
+                <li class="produtos-item">Contato</li>
+            </ul>
+            <h3 class="titulo_h3">Quer bater um papo com a gente?</h3>
+            <p class="texto-contatos">
+                Se você tem uma sugestão saborosa, encontrou um lugar incrível pra indicar ou só quer dizer um "oi", é só preencher o formulário abaixo. 
+                <br><br>
+                Estamos sempre de olhos e ouvidos abertos pra tornar seu roteiro gastronômico ainda mais gostoso!
+            </p>
+            <form id="frmContato">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label>Nome completo</label>
+                    <input type="text" id="nome" required>
+
+                    <label>E-mail</label>
+                    <input type="text" id="nome" required placeholder="seuemail@gmail.com">
+
+                    <label>Telefone</label>
+                    <input type="text" id="nome" required placeholder="">
+
+                    <label>Mensagem</label>
+                    <textarea cols="70" rows="10"></textarea>
+
+                    <label>Como prefere o nosso contato?
+                        <input type="radio" name="contato">E-mail
+                        <input type="radio" name="contato">Telefone
+                        <input type="radio" name="contato">WhatsApp
+                    </label>
+
+                    <label>Qual o motivo do seu contato?</label>
+                    <select>
+                        <option>Selecione</option>
+                        <option>Dúvida</option>
+                        <option>sugestão</option>
+                        <option>Elogio</option>
+                        <option>Reclamação</option>
+                    </select>
+                </fieldset>
+                
+                <label>
+                    <input type="checkbox">Gostaria de receber nossas novidades por email?
+                </label>
+
+                <input type="submit" value="Enviar">
+
+            </form>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Rota Gastrônomica</title>
+        <link href="css/style_produtos.css" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div>
+                <h1 id="nome-produto">TITULO</h1>
+                <img id="imagem-produto" src="">
+                <p id="descricao-produto">DESCRIÇÃO</p>
+
+                <!--Captura as informações do produto-->
+                <script>
+                    function getParametro(dado){
+                        const urlParams = new URLSearchParams(window.location.search);
+                        return urlParams.get(dado);
+                    }
+                    // Preenche na página as informações recebidas
+                document.getElementByID("nome-produto").textContent = getParametro("nome");
+                document.getElementById("imagem-produto").src = getParametro("imagem");
+                document.getElementById("descricao-produto").textContent - getParametro("descricao")
+                </script>
+            </div>
+        </main>
+    </body>
+</html>

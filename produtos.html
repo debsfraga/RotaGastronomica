@@ -3,6 +3,19 @@
         <link href="css/style_produtos.css" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
         <title>Nossos Produtos Rotas</title>
+        <script>
+            alert('Bem vindo ao nosso site!');
+    
+            dia = new Array("Domingo", "Seguda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado")
+            mes = new Array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro")
+            data = new Date
+
+            //POP-UP de detalhes do produto
+            function abrirDetalhes(nome,imagem,descricao){
+                const url = `pop_produtos.html?nome=${encodeURIComponent(nome)}&imagem=${encodeURIComponent(imagem)}&descricao=${encodeURIComponent(descricao)}`;
+                window.open(url, "_blank", "width=800,height=700"); //_blank serve para abrir em outra página
+            }
+        </script>
     </head>
     <body>
         <header>
@@ -14,9 +27,9 @@
                         <!--Itens do menu-->
                         <li><a href="index.html">Home</a></li>
                         <li>Produtos</li>
-                        <li>Contato</li>
+                        <li><a href="contatos.html">Contato</a></li>
                     </ul>
-                </nav>
+                </nav> 
             </div>
        </header>
        <!--Conteúdo do site-->
@@ -31,37 +44,61 @@
                 Conheça o que desenvolvemos especialmente para valorizar o seu negócio e atrair ainda mais clientes:
             </p>
             <div class="container">
-                <div class="card">
+                <script>
+                    descCadastro= "Destaque seu espaço na Rota mais gostosa da cidade! Cadastre seu restaurante ou bar na nossa plataforma e conquiste uma página exclusiva com fotos, descrição personalizada e visibilidade local. É o primeiro passo para atrair novos clientes e contar a sua história com sabor."
+                    slider =
+                </script>
+                <div class="card" onclick="abrirDetalhes('Cadastros de Estabelecimentos', 'img/cadastros.png', descCadastro)">
                     <img src="img/cadastros.png"/>
                     <h2>Cadastro de Estabelecimentos</h2>
                     <p>Oferecemos um espaço exclusivo para bares e restaurantes se cadastrarem em nossa plataforma, com direito a uma página personalizada e divulgação local.</p>
                     <span class="preco">Sob consulta</span>
                 </div>
-                <div class="card">
+
+                <script>
+                    descDivulgacao="A vitrine que o seu negócio merece. Criamos campanhas estratégicas com fotos incríveis, textos atrativos e aquele toque certeiro para chamar atenção nas redes sociais. Mais cliques, mais likes, mais clientes chegando!"
+                </script>
+                <div class="card" onclick="abrirDetalhes('Cadastros de Estabelecimentos', 'img/cadastros.png', descDivulgacao)>
                     <img src="img/divulgação.png" alt="Produto 2">
                     <h2>Divulgação Promocional</h2>
                     <p>Criamos campanhas para promover o seu negócio nas redes sociais e no nosso site. Alcance mais clientes com postagens atrativas e conteúdo estratégico.</p>
                     <span class="preco">R$ 80 / pacote com 4 posts</span>
                 </div>
-                <div class="card">
+
+                <script>
+                    descPlanos="Seu restaurante no holofote certo. Escolha um plano que combine com seu ritmo e garanta presença nos lugares de destaque do nosso site — página inicial, banners e tops da região. Visibilidade sob medida pro seu sucesso!"
+                </script>
+                <div class="card" onclick="abrirDetalhes('Cadastros de Estabelecimentos', 'img/cadastros.png', descPlanos)>
                     <img src="img/visibilidade.png" alt="Produto 3">
                     <h2>Planos de Visibilidade</h2>
                     <p>Escolha entre diferentes planos mensais para destacar seu restaurante na página inicial, banners e listas recomendadas.</p>
                     <span class="preco">R$ 120 / mês</span>
                 </div>
-                <div class="card">
+
+                <script>
+                    descAvaliacoes="Feedback de verdade pra evolução constante. Receba comentários reais dos seus clientes e transforme cada experiência em melhoria. Saber o que o público pensa é a chave pra encantar ainda mais!"
+                </script>
+                <div class="card" onclick="abrirDetalhes('Cadastros de Estabelecimentos', 'img/cadastros.png', descAvaliacoes)>
                     <img src="img/feedbacks.png" alt="Produto 1">
                     <h2>Avaliações e Comentários</h2>
                     <p>Tenha acesso a feedbacks dos clientes e melhore seu atendimento com base em avaliações reais.</p>
                     <span class="preco">R$ 50 / mês</span>
                 </div>
-                <div class="card">
+
+                <script>
+                    descSessoes="Comer com os olhos nunca fez tanto sentido. Dê vida ao seu cardápio e ao seu ambiente com cliques profissionais. De fotos de pratos a registros do espaço, sua vitrine digital vai brilhar como nunca!"
+                </script>
+                <div class="card" onclick="abrirDetalhes('Cadastros de Estabelecimentos', 'img/cadastros.png', descSessoes)>
                     <img src="img/fotograficas.png" alt="Produto 2">
                     <h2>Sessões Fotográficas Profissionais</h2>
                     <p> Oferecemos ensaios fotográficos do cardápio e do ambiente do local, deixando sua página ainda mais atrativa.</p>
                     <span class="preco">R$ 25 a R$ 50 por sessão simples</span>
                 </div>
-                <div class="card">
+
+                <script>
+                    descParcerias="Conexão com quem influencia o seu público. A gente conecta o seu negócio a criadores de conteúdo da região que têm tudo a ver com seu estilo. Aumente o alcance da sua marca com campanhas reais, locais e cheias de sabor!"
+                </script>
+                <div class="card" onclick="abrirDetalhes('Cadastros de Estabelecimentos', 'img/cadastros.png', descParcerias)>
                     <img src="img/influencers.png" alt="Produto 3">
                     <h2> Parcerias com Influenciadores Locais</h2>
                     <p>Intermediamos parcerias com criadores de conteúdo da região para aumentar a visibilidade do seu negócio.</p>
