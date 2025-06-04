@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estilização geral do fundo */
+body {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-family: "Raleway", serif;
+}
+
+/* Estilo da pop-up */
+.pop {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #1e1e1e;
+    border-radius: 16px;
+    box-shadow: 0 0 20px #ffcd61;
+    padding: 30px;
+    color: white;
+}
+
+.pop img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 20px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pop img:hover {
+    transform: scale(1.02);
+}
+
+.pop h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #f8f8f8;
+    text-align: center;
+}
+
+.pop p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+/* Botão de voltar */
+button {
+    background: #ffcd61;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: Is all;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background: #be9743;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* espaço entre os botões e a imagem */
+}
+
+.slider img {
+    width: 80%; /* ou o valor que preferir */
+    height: auto;
+    border-radius: 12px;
+}

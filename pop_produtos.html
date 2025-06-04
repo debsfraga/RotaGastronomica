@@ -1,13 +1,18 @@
 <html>
     <head>
         <title>Rota Gastrônomica</title>
-        <link href="css/style_produtos.css" rel="stylesheet">
+        <link href="css/style_popup.css" rel="stylesheet">
     </head>
     <body>
-        <main>
+        <main class="pop">
             <div>
                 <h1 id="nome-produto">TITULO</h1>
-                <img id="imagem-produto" src="">
+                <!--<img id="imagem-produto" src="" alt=""/>-->
+                <div class="slider">
+                    <button id="prevBtn">&#10094;</button>
+                    <img id="slider-img" src="" alt="">
+                    <button id="nextBtn">&#10095;</button>
+                </div>
                 <p id="descricao-produto">DESCRIÇÃO</p>
 
                 <!--Captura as informações do produto-->
@@ -17,10 +22,37 @@
                         return urlParams.get(dado);
                     }
                     // Preenche na página as informações recebidas
-                document.getElementByID("nome-produto").textContent = getParametro("nome");
-                document.getElementById("imagem-produto").src = getParametro("imagem");
-                document.getElementById("descricao-produto").textContent - getParametro("descricao")
+                    document.getElementById("nome-produto").textContent = getParametro("nome");
+                    //document.getElementById("imagem-produto").src = getParametro("imagem");
+                    document.getElementById("descricao-produto").textContent = getParametro("descricao")
+
+                    // Controle do Slider
+                    const imagens=getParametro("imagem")
+                                    ? getParametro("imagem").split(',')
+                                    : [];
+                    let index=0;
+                    const sliderImg=document.getElementById("slider-img");
+
+                    function MostrarImagem(){
+                        if(imagens.length > 0){
+                            sliderImg.src=imagens[index];
+                        }
+                    }
+
+                    document.getElementById("prevBtn").onclick = function() {
+                        index = (index-1 + imagens.length) % imagens.length;
+                        MostrarImagem();
+                    }
+
+                    document.getElementById("nextBtn").onclick = function() {
+                        index = (index+1) % imagens.length;
+                        MostrarImagem();
+                    }
+
+                    // Exibe a primeira imagem
+                    MostrarImagem();
                 </script>
+                <button type="button"onclick="window.close();">Fechar</button>
             </div>
         </main>
     </body>
